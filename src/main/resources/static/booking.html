@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="brand">
+        <img src="img.png" class="logo">
+        <h2>Fly In Sky</h2>
+    </div>
+    <h1 class="page-title">Create Booking</h1>
+    <div class="nav-buttons">
+    <button onclick="backToFlights()">Back to Flights</button>
+    <button type="button" onclick="logout()">Logout</button>
+    </div>
+    </div>
+<div class="container">
+<div class="section">
+    <h2>Selected Flight</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Flight No</th>
+            <th>Flight Name</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Departure</th>
+            <th>Ticket Price</th>
+            <th>Available Seats</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td id="flightNo"></td>
+            <td id="flightName"></td>
+            <td id="fromCity"></td>
+            <td id="toCity"></td>
+            <td id="departure"></td>
+            <td id="ticketPrice"></td>
+            <td id="availableSeats"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+    <div class="section">
+        <h2>Passenger Details</h2>
+
+        <input type="text" id="fullName" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phoneNo" placeholder="Phone No">
+        <input type="text" id="cnic" placeholder="CNIC">
+        <input type="text" id="passportNo" placeholder="Passport No">
+        <input type="text" id="nationality" placeholder="Nationality">
+
+        <h2>Booking Details</h2>
+        <input type="date" id="travelDate">
+        <input type="number" id="noOfSeats" placeholder="No Of Seats">
+
+        <button type="button" onclick="createBooking()">Create Booking</button>
+    </div>
+</div>
+
+<script src="booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-famiy: Arial, sans-serif;
+}
+
+body{
+bacground: #f2f4f8;
+}
+
+.navbar{
+background: #221C9E;
+color: white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 30px;
+}
+
+.page-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+}
+
+.brand{
+display: flex;
+align-items:center;
+gap: 12px;
+}
+
+.logo{
+width: 55px;
+height:55px;
+border-radius:50%;
+background: white;
+padding:5px;
+}
+
+.brand h2{
+font-size:20px;
+color:white;
+}
+
+.nav-buttons button {
+padding: 9px 15px;
+margin-left:10px;
+background:white;
+color:#1b2a41;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.nav-buttons button:hover{
+background:#ccc9dc;
+}
+.container {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+h1 {
+    color:#221C9E;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #221C9E;
+    margin-bottom: 18px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+margin-bottom:20px;
+}
+
+th{
+background:  #221C9E;
+color:white;
+padding:10px;
+}
+
+td{
+border:1px solid #ddd;
+padding:10px;
+text-align:center;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border: 1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+input:focus{
+border-color: #1b2a41;
+}
+
+button{
+padding: 11px 20px;
+margin-top: 12px;
+background:#221C9E;
+color:white;
+border-radius:10px;
+font-weight:border;
+cursor:pointer;
+}
+
+button:hover{
+background: #606de0;
+}
+
+

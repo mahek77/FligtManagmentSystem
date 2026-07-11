@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2f4f8;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #221C9E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+}
+
+.brand h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.nav-buttons a,
+.nav-buttons button {
+    margin-left: 10px;
+    padding: 9px 15px;
+    background: white;
+    color: #1b2a41;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-buttons a:hover,
+.nav-buttons button:hover {
+    background: #ccc9dc;
+}
+
+.container {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    scroll-margin-top: 100px;
+}
+
+h1 {
+    color: #1b2a41;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #221C9E;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1b2a41;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 8px 5px 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: #221C9E;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #606de0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #221C9E;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+td button {
+    padding: 7px 10px;
+    font-size: 16px;
+}
+
+
+.delete-btn {
+    background: #b00020;
+}
+
+.delete-btn:hover {
+    background: #7a0015;
+}

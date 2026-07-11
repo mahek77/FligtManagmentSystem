@@ -1,0 +1,116 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+body{
+background:#f2f4f8;
+}
+
+.navbar {
+    background: #2C2299;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 45px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo {
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+padding:5px;
+}
+
+.brand h2{
+font-size:20px;
+color:white;
+}
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-buttons button {
+padding:9p 15px;
+margin-left:10px;
+background:white;
+color: #1b2a41;
+border-radius: 10px;
+font-weight:bold;
+cursor: pointer;
+}
+
+.nav buttons button:hover{
+background:  #ccc9dc;
+}
+
+.container{
+width:100%;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.payment-box {
+    width: 430px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.payment-box h1 {
+    text-align: center;
+    color: #1b2a41;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1b2a41;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #221C9E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #606de0;
+}

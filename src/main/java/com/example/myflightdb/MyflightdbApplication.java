@@ -1,0 +1,13 @@
+package com.example.myflightdb;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MyflightdbApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MyflightdbApplication.class, args);
+    }
+
+}

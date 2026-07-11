@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="brand">
+        <img src="img.png" class="logo">
+        <h2>Fly In Sky</h2>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="#addFlightSection">Add Flight</a>
+        <a href="#allFlightsSection">All Flights</a>
+        <a href="#allBookingsSection">All Bookings</a>
+        <button type="button" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section" id="addFlightSection">
+        <h1>Admin Dashboard</h1>
+        <h2>add/update/delete flight</h2>
+
+        <input type="hidden" id="flightId">
+        <input type="text" id="flightNo" placeholder="Flight No">
+        <input type="text" id="flightName" placeholder="Flight Name">
+        <input type="number" id="fromCityId" placeholder="From City Id">
+        <input type="number" id="toCityId" placeholder="To City Id">
+        <input type="date" id="departureDate" placeholder="Departure Date">
+        <input type="time" id="departureTime" placeholder="Departure Time">
+        <input type="date" id="arrivalDate" placeholder="Arrival Date">
+        <input type="time" id="arrivalTime" placeholder="Arrival Time">
+        <input type="number" id="ticketPrice" placeholder="Ticket Price">
+        <input type="number" id="totalSeats" placeholder="Total Seats">
+        <input type="number" id="availableSeats" placeholder="Available Seats">
+        <input type="number" id="adminId" placeholder="Admin Id">
+
+        <button onclick="addFlight()">Add Flight</button>
+        <button onclick="updateFlight()">Update Flight</button>
+        <button onclick="clearForm()">Clear Form</button>
+    </div>
+
+    <div class="section" id="allFlightsSection">
+        <h2>All Flights</h2>
+        <button onclick="loadFlights()">Refresh Flights</button>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Flight NO</th>
+                <th>Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Price</th>
+                <th>total Seats</th>
+                <th>Available Seats</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="flightTable"></tbody>
+        </table>
+    </div>
+
+    <div class="section" id="allBookingsSection">
+        <h2>All Bookings</h2>
+        <button onclick="loadBookings()">Refresh Bookings</button>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Booking Id</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Flight No</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Travel Date</th>
+                <th>Seats</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody id="bookingTable"></tbody>
+        </table>
+    </div>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
