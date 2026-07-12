@@ -169,7 +169,7 @@ function updateFlight() {
         toCity: {
             city_id: Number(document.getElementById("toCityId").value)
         },
-        departure_date: document.getElementById("departureDate").value,
+        departureDate: document.getElementById("departureDate").value,
         departure_time: document.getElementById("departureTime").value,
         arrival_date: document.getElementById("arrivalDate").value,
         arrival_time: document.getElementById("arrivalTime").value,
