@@ -39,7 +39,7 @@ public class Users {
     public String getPassport_no(){return passport_no;}
     public void setPassport_no(String passport_no){this.passport_no=passport_no;}
 
-    @Column(name = "nationality",nullable = false,unique = true)
+    @Column(name = "nationality",nullable = false)
     public String getNationality(){return nationality;}
     public void setNationality(String nationality){this.nationality=nationality;}
 }
