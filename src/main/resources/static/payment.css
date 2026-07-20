@@ -114,3 +114,72 @@ button {
 button:hover {
     background: #606de0;
 }
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        gap: 10px;
+    }
+
+    .container {
+        min-height: calc(100vh - 85px);
+        padding: 25px 15px;
+    }
+
+    .payment-box {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 12px 15px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand h2 {
+        font-size: 17px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+    }
+
+    .nav-buttons button {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container {
+        min-height: auto;
+        padding: 25px 15px;
+    }
+
+    .payment-box {
+        width: 100%;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .payment-box h1 {
+        font-size: 24px;
+    }
+
+    input {
+        padding: 11px;
+        font-size: 15px;
+    }
+}
