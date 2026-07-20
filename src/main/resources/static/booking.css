@@ -126,4 +126,99 @@ button:hover{
 background: #606de0;
 }
 
+@media screen and (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 
+    .page-title {
+        position: static;
+        transform: none;
+        width: 100%;
+        order: 3;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand h2 {
+        font-size: 17px;
+    }
+
+    .page-title {
+        order: 2;
+        font-size: 22px;
+        white-space: normal;
+    }
+
+    .nav-buttons {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-buttons button {
+        width: 100%;
+    }
+
+    .section {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
