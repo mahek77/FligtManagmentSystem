@@ -130,57 +130,41 @@ background: #606de0;
     .navbar {
         flex-wrap: wrap;
         gap: 12px;
+        padding: 12px 20px;
     }
 
     .page-title {
         position: static;
-        transform: none;
         width: 100%;
+        transform: none;
         order: 3;
         text-align: center;
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        padding: 12px 15px;
+        font-size: 24px;
     }
 
     .container {
-        width: 95%;
-        margin: 15px auto;
+        width: 96%;
     }
 
     .section {
         padding: 18px;
     }
 
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    table {
-        min-width: 700px;
-    }
-
     th,
     td {
-        padding: 8px;
-        font-size: 14px;
+        padding: 7px 3px;
+        font-size: 11px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
+        padding: 12px;
     }
 
     .brand {
+        width: 100%;
         justify-content: center;
     }
 
@@ -195,7 +179,7 @@ background: #606de0;
 
     .page-title {
         order: 2;
-        font-size: 22px;
+        font-size: 21px;
         white-space: normal;
     }
 
@@ -206,19 +190,64 @@ background: #606de0;
 
     .nav-buttons button {
         width: 100%;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 12px 0;
+        padding: 0 6px;
     }
 
     .section {
-        padding: 15px;
+        width: 100%;
+        padding: 10px 5px;
+        margin-bottom: 15px;
         border-radius: 8px;
     }
 
-    input {
-        font-size: 15px;
-        padding: 10px;
+    h1 {
+        font-size: 21px;
     }
 
-    button {
+    h2 {
+        font-size: 18px;
+    }
+
+    input {
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+    }
+
+    th,
+    td {
+        min-width: 0;
+        padding: 5px 1px;
+        font-size: 8px;
+        line-height: 1.2;
+        white-space: normal;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+    }
+
+    td button {
+        width: 100%;
+        min-width: 0;
+        padding: 4px 1px;
+        margin: 2px 0;
+        font-size: 8px;
+        white-space: normal;
+        word-break: break-all;
+    }
+
+    .section > button {
         width: 100%;
     }
 }
