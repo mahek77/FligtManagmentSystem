@@ -114,34 +114,15 @@ button {
 button:hover {
     background: #606de0;
 }
-@media screen and (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .nav-buttons {
-        gap: 10px;
-    }
-
-    .container {
-        min-height: calc(100vh - 85px);
-        padding: 25px 15px;
-    }
-
-    .payment-box {
-        padding: 25px;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
-        padding: 12px 15px;
+        gap: 12px;
+        padding: 12px;
     }
 
     .brand {
+        width: 100%;
         justify-content: center;
     }
 
@@ -160,12 +141,12 @@ button:hover {
 
     .nav-buttons button {
         width: 100%;
-        margin: 0;
+        white-space: normal;
     }
 
     .container {
         min-height: auto;
-        padding: 25px 15px;
+        padding: 25px 12px;
     }
 
     .payment-box {
@@ -175,7 +156,7 @@ button:hover {
     }
 
     .payment-box h1 {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     input {
