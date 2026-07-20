@@ -148,3 +148,103 @@ td button {
 .delete-btn:hover {
     background: #7a0015;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 12px 15px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-buttons a,
+    .nav-buttons button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .section {
+        padding: 18px;
+        margin-bottom: 20px;
+        scroll-margin-top: 160px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    table {
+        min-width: 750px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    td button {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand h2 {
+        font-size: 17px;
+    }
+
+    .nav-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-buttons a,
+    .nav-buttons button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
