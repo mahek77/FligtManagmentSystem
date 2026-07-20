@@ -76,3 +76,58 @@ border-radius:50%;
 padding:10px;
 margin-buttom:15px;
 }
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 380px;
+        padding: 25px;
+    }
+
+    .box h1 {
+        font-size: 26px;
+    }
+
+    .box h2 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .box {
+        width: 100%;
+        margin: 15px 0;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .box h1 {
+        font-size: 23px;
+    }
+
+    .box h2 {
+        font-size: 19px;
+    }
+
+    .box input {
+        padding: 11px;
+        font-size: 15px;
+    }
+
+    .box button {
+        font-size: 17px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+}
